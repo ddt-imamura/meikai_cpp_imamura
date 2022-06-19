@@ -1,28 +1,36 @@
-//============================================================================
-// Name        : ensyu1_4.cpp
-// Author      :
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+/*
+ * 関数名: main
+ * 説明	: 新版明解C++　演習問題1-7
+ * 		  ３つのint型変数に値を代入し、それらの平均と合計をもとめる。
+ * パラメータ:なし
+ * 返り値:  0固定
+ * 作成者: T.Imamura
+ * 作成日: 2022.06.14
+ * 備考:
+ */
 
 #include	<iostream>
 
 using namespace std;
 
 int main() {
-	int x;	//xはint型の変数
-	int y;	//yはint型の変数
-	int z;	//zはint型の変数
+	int firstValue;		//1つ目のint型変数
+	int SecondtValue;	//２つ目のint型変数
+	int thirdValue;		//3つ目のint型変数
 
-	x = 63;
-	y = 18;
-	z = 15;
+	firstValue = 63;	/* 1つ目のint型変数に値を代入 */
+	SecondtValue = 18;	/* ２つ目のint型変数に値を代入 */
+	thirdValue = 15;	/* ３つ目のint型変数に値を代入 */
+	//1つ目のint型変数の値を表示
+	cout << "xの値は" << firstValue << "です。\n";
+	//２つ目のint型変数の値を表示
+	cout << "yの値は" << SecondtValue << "です。\n";
+	//３つ目のint型変数の値を表示
+	cout << "zの値は" << thirdValue << "です。\n";
+	//３つの整数値の合計を表示
+	cout << "合計の値は" << firstValue + SecondtValue + thirdValue << "です。\n";
+	//３つの変数値の合計を表示
+	cout << "平均の値は" << (firstValue + SecondtValue + thirdValue) / 3 << "です。\n";
 
-	cout << "xの値は" << x << "です。\n";	//xの値を表示
-	cout << "yの値は" << y << "です。\n";	//yの値を表示
-	cout << "zの値は" << z << "です。\n";	//zの値を表示
-	cout << "合計の値は" << x + y + z << "です。\n";	//xとyとzの合計を表示
-	cout << "平均の値は" << (x + y + z) / 3 << "です。\n";	//xとyのとz平均を表示
 	return 0;
 }
