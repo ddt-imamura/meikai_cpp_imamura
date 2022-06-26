@@ -17,19 +17,42 @@ int main() {
 
 	int inputNumberFirst;	//1つ目の読み込み整数
 	int inputNumberSecond;	//２つ目の読み込み整数
+	int inputNumberLarge;	//読み込み整数の大きい方
+	int inputNumberSmall;	//読み込み整数の小さい方
 
-	//整数の入力を促す
-	cout << "2つの整数4ｓ。\n";
-	//底辺の入力を促す
-	cout << "底辺 : ";
-	//底辺を変数に格納する
-	cin >> bottomValue;
-	//高さの入力を促す
-	cout << "高さ : ";
-	//高さを変数に格納する
-	cin >> heightValue;
-	//底辺と高さの値から三角形の面積を計算し、表示を行う
-	cout << "面積は" << (bottomValue * heightValue) / 2 << "です。 \n";
+
+	//１つめの整数の入力を促す
+	cout << "整数A ： ";
+	//1つ目の整数値を格納
+	cin >> inputNumberFirst;
+	//２つめの整数の入力を促す
+	cout << "整数B : ";
+	//２つ目の整数値を格納
+	cin >> inputNumberSecond;
+
+	//1つ目の整数値の方が大きい場合
+	if ( inputNumberFirst > inputNumberSecond )
+	{
+		//大きい方の整数に1つ目の整数値を代入
+		inputNumberLarge = inputNumberFirst;
+		//小さい方の整数に２つ目の整数値を代入
+		inputNumberSmall = inputNumberSecond;
+		//２つ目の整数値の方が大きい場合
+	} else
+	{
+		//大きい方の整数に２つ目の整数値を代入
+		inputNumberLarge = inputNumberSecond;
+		//小さい方の整数に１つ目の整数値を代入
+		inputNumberSmall = inputNumberFirst;
+	}
+	//小さい方の整数から繰り返しで表示
+	do {
+		//小さい方の整数から表示を始める
+		cout << inputNumberSmall << ' ';
+		//次の整数値に更新
+		inputNumberSmall++;
+	//大きい方の整数を超えない限り
+	} while ( inputNumberSmall <= inputNumberLarge );
 
 	return 0;
 }
