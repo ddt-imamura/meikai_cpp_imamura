@@ -41,13 +41,11 @@ int main() {
 	if ( secondNumber < minimumNumber ) {
 		//整数Bのほうが小さければ最小値を更新する
 		minimumNumber = secondNumber;
+	}
 	//整数A,Bの小さいほうと整数Cを比較する
-	} else if ( thirdNumber < minimumNumber ) {
+	if ( thirdNumber < minimumNumber ) {
 		//整数Cのほうが小さければ最小値を更新する
 		minimumNumber = thirdNumber;
-	//整数Aが最小の場合
-	} else {
-		//何もしない
 	}
 	//最小値を表示する
 	cout << "3つの中で最小の数は" << minimumNumber <<  "です。\n";
