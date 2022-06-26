@@ -72,7 +72,7 @@ int main() {
 			medianNumber = firstNumber;
 		}
 	}
-	//最小値を表示する
+	//中央値を表示する
 	cout << "3つの整数の中央値は" << medianNumber <<  "です。\n";
 
 	return 0;
