@@ -23,6 +23,8 @@ int main() {
 		cout << "その値は正です。\n";
 	} else if ( n < 0 ) {
 		cout << "その値は負です。\n";
-	} else if ( n == 0 ) {		//else if ではなくelse文で完結させる必要が有るためエラーとなる
+	} else if ( n == 0 )  {		//変更前は } else {
 		cout << "その値は0です。\n";
+	}
 }
+//else if文に変更しても問題は起こらない
